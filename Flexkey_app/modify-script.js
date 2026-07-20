@@ -411,11 +411,11 @@ Always enclose your python code in a single markdown block like this: \`\`\`pyth
     dynamicPrompt += `\nCURRENT USER CONFIG:\n\`\`\`python\n${existingConfig}\n\`\`\`\nRetain existing settings, change only what is requested.`;
 
     try {
-        const response = await fetch('https://corsproxy.io/?https://ai.hackclub.com/proxy/v1/chat/completions', {
+        // We now call our own secure Vercel backend route!
+        // No more corsproxy.io, and no more exposed API keys.
+        const response = await fetch('/api/chat', {
             method: 'POST',
             headers: {
-                // Ensure you paste your private key here!
-                'Authorization': 'Bearer ${process.env.FLEXBOT_API_KEY}', 
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
@@ -439,7 +439,6 @@ Always enclose your python code in a single markdown block like this: \`\`\`pyth
             const pythonCode = codeMatch[1].trim();
             firmwareCodeBlock.value = pythonCode;
             
-            // Dispatch input event to strictly enforce visual sync from text block
             firmwareCodeBlock.dispatchEvent(new Event('input'));
             
             const tabFirmware = document.getElementById('tab-firmware');
@@ -451,7 +450,6 @@ Always enclose your python code in a single markdown block like this: \`\`\`pyth
         chatHistory.removeChild(loadingBubble);
         appendNotification(`API Connection Failed: ${error.message}.`);
     }
-}
 
 sendBtn?.addEventListener('click', () => { if (chatInput.value.trim()) sendToFlexBot(chatInput.value.trim()); });
 chatInput?.addEventListener('keypress', (e) => { if (e.key === 'Enter' && chatInput.value.trim()) sendToFlexBot(chatInput.value.trim()); });
