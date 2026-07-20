@@ -1,0 +1,359 @@
+/* Core Styling & Variables - Bambu Lab Palette */
+:root {
+    --bg-color: #000000;
+    --card-bg: #111111;
+    --text-primary: #ffffff;
+    --text-secondary: #888888;
+    --border-color: #222222;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', -apple-system, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+a.no-underline {
+    text-decoration: none;
+}
+
+/* 1. Sticky Sub-Navbar */
+.sub-nav {
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border-color);
+    z-index: 1000;
+    padding: 12px 0;
+}
+
+.nav-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.product-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: var(--text-primary);
+}
+
+.github-link {
+    font-size: 1.2rem !important;
+}
+
+/* Bambu-style Pill Buttons */
+.buy-btn-small {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.buy-btn-small:hover {
+    background-color: #e0e0e0;
+}
+
+.btn-primary {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 14px 36px;
+    border-radius: 40px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.02);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 14px 36px;
+    border-radius: 40px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.btn-secondary:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* 2. Hero Section */
+/* 2. Hero Section - Full Display Mode */
+.hero {
+    position: relative;
+    width: 100%;
+    /* Makes the hero section fill the exact height of the user's screen minus the navbar */
+    height: calc(100vh - 60px); 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Pushes the text to the bottom of the screen */
+    align-items: center;
+    padding-bottom: 80px; 
+    margin: 0;
+    overflow: hidden;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    width: 100%;
+}
+
+.hero-content h1 {
+    font-size: clamp(4rem, 8vw, 7rem);
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    line-height: 1.1;
+    margin-bottom: 10px;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.8); /* Ensures the text pops */
+}
+
+.tagline {
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    color: #cccccc;
+    margin-bottom: 40px;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+.hero-actions {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 0;
+}
+
+/* Make the video fill the absolute edges of the screen */
+.hero-video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Sets the video behind the text */
+    background-color: #000;
+}
+
+#flexkeyVideo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This is the magic CSS that fits the video to the display without stretching */
+}
+
+/* Adds a fading dark shadow to the bottom so the buttons and text are perfectly clear */
+.video-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0) 100%);
+    z-index: 2;
+}
+/* 3. Features Highlights Grid */
+.features-grid {
+    padding: 120px 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.section-title h2 {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.grid-card {
+    background-color: var(--card-bg);
+    border-radius: 16px;
+    padding: 40px;
+    transition: transform 0.3s ease;
+}
+
+.grid-card:hover {
+    transform: translateY(-4px);
+}
+
+.grid-card h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.grid-card p {
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+/* 4. Specifications Section */
+.specs-section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 80px 20px 140px 20px;
+}
+
+.specs-table-container {
+    margin-top: 60px;
+    margin-bottom: 80px;
+    border-top: 1px solid var(--border-color);
+}
+
+.specs-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.specs-table tr {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.specs-table td {
+    padding: 30px 20px;
+    font-size: 1.1rem;
+}
+
+.spec-label {
+    color: var(--text-secondary);
+    font-weight: 600;
+    width: 40%;
+}
+
+.spec-value {
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+/* 5. Open Source CTA */
+.open-source-cta {
+    background-color: var(--card-bg);
+    padding: 80px 40px;
+    border-radius: 24px;
+    text-align: center;
+}
+
+.open-source-cta h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: -0.02em;
+}
+
+.open-source-cta p {
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+/* 6. Footer CTA */
+.footer-cta {
+    text-align: center;
+    padding: 40px 20px;
+    border-top: 1px solid var(--border-color);
+}
+
+.copyright {
+    color: #555555;
+    font-size: 0.9rem;
+}
+
+/* Animations */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Mobile Tweaks */
+@media (max-width: 768px) {
+    .hero-actions, .cta-buttons {
+        flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+    }
+    .specs-table td {
+        display: block;
+        width: 100%;
+        padding: 15px 0;
+    }
+    .specs-table tr {
+        padding: 15px 0;
+    }
+    .spec-label {
+        padding-bottom: 5px !important;
+    }
+}

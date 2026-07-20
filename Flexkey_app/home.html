@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexKey - The Icon, Redefined</title>
+    <!-- Premium Font (Inter - matches Bambu's clean sans-serif look) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="home-style.css">
+</head>
+<body>
+
+    <!-- Bambu-style Sticky Nav -->
+    <nav class="sub-nav">
+        <div class="nav-container">
+            <span class="product-name">FlexKey</span>
+            <div class="nav-links">
+                <a href="#overview" class="active">Overview</a>
+                <a href="#features">Features</a>
+                <a href="#specs">Specs</a>
+                <a href="https://github.com/dushyantyadav0303/FlexKey" target="_blank" class="github-link" title="Source Code">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+<!-- Massive Bambu-style Full-Display Hero -->
+    <header class="hero" id="overview">
+        
+        <!-- Video Background covering the whole screen -->
+        <div class="hero-video-container">
+            <video id="flexkeyVideo" muted playsinline>
+                <source src="https://cdn.hackclub.com/019f742c-f230-7dfa-88e3-764c42e55933/Flexkey_Animation.mp4" type="video/mp4">
+            </video>
+            <!-- Dark gradient to make text readable -->
+            <div class="video-overlay"></div>
+        </div>
+
+        <!-- Content positioned over the video -->
+        <div class="hero-content fade-in">
+            <h1>FlexKey</h1>
+            <p class="tagline">Open Source. High Performance. Redefined.</p>
+            <div class="hero-actions">
+                <button id="videoCtrlBtn" class="btn-primary">Play Video</button>
+                <a href="modify.html" class="no-underline"><button class="btn-secondary">Modify It Using AI</button></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Clean Grid Features -->
+    <section class="features-grid" id="features">
+        <div class="section-title fade-in">
+            <h2>Key Highlights</h2>
+        </div>
+        <div class="grid-container">
+            <div class="grid-card fade-in">
+                <h3>Fully Customizable</h3>
+                <p>flexkey is Open-Source Fully customizable Keyboard </p>
+            </div>
+            <div class="grid-card fade-in">
+                <h3>AI Customizable dashboard</h3>
+                <p> It have a Intelligent dashboard which you just type and AI customise your keyboard for you</p>
+            </div>
+            <div class="grid-card fade-in">
+                <h3>KMK Firmware</h3>
+                <p>Powered by KMK, Built on top of CircuitPython, KMK makes customization effortless.</p>
+            </div>
+            <div class="grid-card fade-in">
+                <h3> Customizable RGB Matrix</h3>
+                <p>It allows to Customising without Interfering with other keys</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stark Spec Sheet -->
+    <section class="specs-section" id="specs">
+        <div class="section-title fade-in">
+            <h2>Technical Specifications</h2>
+        </div>
+        
+        <div class="specs-table-container fade-in">
+            <table class="specs-table">
+                <tr>
+                    <td class="spec-label">Architecture</td>
+                    <td class="spec-value">Fully Open-Source (Hardware & Firmware)</td>
+                </tr>
+                <tr>
+                    <td class="spec-label">Connectivity</td>
+                    <td class="spec-value">USB-C/Micro-USB</td>
+                </tr>
+                <tr>
+                    <td class="spec-label">Layout Support</td>
+                    <td class="spec-value">Dynamic KMK Layout Engine</td>
+                </tr>
+                <tr>
+                    <td class="spec-label">Switch Compatibility</td>
+                    <td class="spec-value">Use Hot-swappable MX Style Switches</td>
+                </tr>
+                <tr>
+                    <td class="spec-label">License</td>
+                    <td class="spec-value">MIT License (Free to modify, build, and Hack)</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Heavy Dark CTA Block -->
+        <div class="open-source-cta fade-in">
+            <h3>Hack It. Build It. Share It.</h3>
+            <p>FlexKey is community-driven. You can customize the entire firmware configuration or download the CAD/PCB files to Fabricate your own.</p>
+            <div class="cta-buttons">
+                <a href="modify.html" class="no-underline"><button class="btn-primary">Modify it With AI</button></a>
+                <a href="https://github.com/dushyantyadav0303/FlexKey" target="_blank" class="btn-secondary no-underline">
+                    <i class="fa-brands fa-github"></i> Clone Repository
+                </a>
+            </div>
+        </div>
+    </section>
+    <script src="home-script.js"></script>
+</body>
+</html>
