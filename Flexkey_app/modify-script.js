@@ -126,6 +126,7 @@ const kcToLabel = {
     'KC.LEFT': 'Left', 'KC.DOWN': 'Down', 'KC.RGHT': 'Right', 'KC.TRNS': '...'
 };
 
+
 /* --- LIGHTING COLOR HELPERS --- */
 function hexToKmkHue(hex) {
     const r = parseInt(hex.substr(1, 2), 16) / 255;
@@ -155,6 +156,7 @@ function kmkHueToHex(hue255) {
     return `#${toHex(f(0))}${toHex(f(8))}${toHex(f(4))}`;
 }
 
+
 /* --- SECURE CONFIG FIELD UPDATER (100% FIRMWARE RELIANCE) --- */
 function updateConfigField(fieldName, value) {
     // Always fetch directly from the editor
@@ -181,6 +183,7 @@ function updateConfigField(fieldName, value) {
     firmwareCodeBlock.dispatchEvent(new Event('input'));
 }
 
+
 /* --- UI SYNCING LOGIC (The only function allowed to change the visualizer) --- */
 function syncVisualsFromConfig(configText) {
     // 1. Sync OLED
@@ -198,14 +201,14 @@ function syncVisualsFromConfig(configText) {
     const ledVal = valMatch ? parseInt(valMatch[1]) : 150;
     const ledMode = modeMatch ? parseInt(modeMatch[1]) : 1;
 
-    // Fix: Properly calculate HSL to prevent Rainbow logic from breaking
+    // Properly calculate HSL to prevent Rainbow logic from breaking
     const cssHue = Math.round((ledHue / 255) * 360);
     const isAmbientOff = ledMode === 0 || ledMode === REACTIVE_LED_MODE;
     const glowAlpha = isAmbientOff ? 0 : (0.15 + (ledVal / 255) * 0.65);
     const glowLightness = 42 + Math.round((ledVal / 255) * 18);
 
     if (ledMode === 3 || ledMode === 4) {
-        // Rainbow Effect FIX: hue-rotate requires a highly saturated base color
+        // Rainbow Effect
         document.documentElement.style.setProperty('--rgb-glow-color', `hsla(0, 100%, 50%, ${glowAlpha.toFixed(2)})`);
         document.documentElement.style.setProperty('--glow-animation', 'rainbow-effect 5s infinite linear');
     } else {
@@ -307,6 +310,7 @@ firmwareCodeBlock?.addEventListener('input', function() {
     syncVisualsFromConfig(this.value);
 });
 
+
 /* --- AI BOT INTEGRATION --- */
 const chatInput = document.querySelector('.chat-input-area input');
 const sendBtn = document.querySelector('.send-btn');
@@ -320,7 +324,7 @@ function appendMessage(sender, text, isLoader = false) {
         msgDiv.innerHTML = `<div class="text" style="background: #333; padding: 8px 12px; border-radius: 12px; max-width: 80%;">${text}</div>`;
     } else {
         if (isLoader) {
-            // New animated loader implementation
+            // Animated loader implementation
             msgDiv.innerHTML = `<div class="avatar">F</div><div class="text" style="padding-top: 5px;"><div class="typing-indicator"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div></div>`;
         } else {
             msgDiv.innerHTML = `<div class="avatar">F</div><div class="text">${text}</div>`;
@@ -399,9 +403,8 @@ async function sendToFlexBot(userText) {
         existingConfig = DEFAULT_TEMPLATE;
     }
 
-    // Trigger the new animated loader
+    // Trigger the animated loader
     const loadingBubble = appendMessage('ai', '', true);
-    const loadingText = loadingBubble.querySelector('.text');
 
     let dynamicPrompt = `You are Flex-Bot, an AI configuration assistant for a custom 75% mechanical keyboard (84 keys).
 CRITICAL INSTRUCTION: You MUST output the ENTIRE, complete 'config.py' file. DO NOT output partial code snippets.
@@ -411,8 +414,7 @@ Always enclose your python code in a single markdown block like this: \`\`\`pyth
     dynamicPrompt += `\nCURRENT USER CONFIG:\n\`\`\`python\n${existingConfig}\n\`\`\`\nRetain existing settings, change only what is requested.`;
 
     try {
-        // We now call our own secure Vercel backend route!
-        // No more corsproxy.io, and no more exposed API keys.
+        // Secure call to Vercel Backend
         const response = await fetch('/api/chat', {
             method: 'POST',
             headers: {
@@ -432,13 +434,15 @@ Always enclose your python code in a single markdown block like this: \`\`\`pyth
         const data = await response.json();
         const aiResponseText = data.choices[0].message.content;
 
-        loadingText.innerText = aiResponseText.replace(/```python[\s\S]*?```/g, '[Configuration Code Generated]');
+        // Replace the loader with the actual AI response
+        loadingBubble.querySelector('.text').innerHTML = aiResponseText.replace(/```python[\s\S]*?```/g, '[Configuration Code Generated]');
 
         const codeMatch = aiResponseText.match(/```python([\s\S]*?)```/);
         if (codeMatch) {
             const pythonCode = codeMatch[1].trim();
             firmwareCodeBlock.value = pythonCode;
             
+            // Dispatch input event to strictly enforce visual sync from text block
             firmwareCodeBlock.dispatchEvent(new Event('input'));
             
             const tabFirmware = document.getElementById('tab-firmware');
@@ -450,6 +454,7 @@ Always enclose your python code in a single markdown block like this: \`\`\`pyth
         chatHistory.removeChild(loadingBubble);
         appendNotification(`API Connection Failed: ${error.message}.`);
     }
+}
 
 sendBtn?.addEventListener('click', () => { if (chatInput.value.trim()) sendToFlexBot(chatInput.value.trim()); });
 chatInput?.addEventListener('keypress', (e) => { if (e.key === 'Enter' && chatInput.value.trim()) sendToFlexBot(chatInput.value.trim()); });
