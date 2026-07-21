@@ -1,0 +1,14 @@
+﻿Item,Designator,Footprint,Quantity
+RaspberryPi_Pico,A1,RaspberryPi_Pico,1
+1N4148,D1-D84,D_SOD-123,84
+SK6812,DL1-DL83,SK6812MINI-E,83
+RotaryEncoder,EN1,RotaryEncoder_EC11E-Switch_Vertical,1
+oled Disply,J1,OLED_0.91_128x32,1
+Key Switches,SW1-SW84,MX100H,84
+Keycaps,SW1-SW84,MX200H,2
+Kailh Hot-Swap Sockets,SW1-SW84,Kailh Hot-Swap Sockets (CPG151101S11),84
+Stabilizers,,,8
+Full Case,,"inc. bottom, Top & plate",1
+PCB ,,,1
+M3 heat Insert,,,4
+M3 Screw H-20mm,,,4
