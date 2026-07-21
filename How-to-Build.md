@@ -60,7 +60,6 @@ or
 - Put the heated Soldering iron to top of the Heatinseart with a Gentle presure 
 - once it's inside take up the soldering Iron
 
-
 ### Step 2
 - Put the Base Part of the case
 - place the pcb on it  
@@ -78,11 +77,7 @@ or
 - press upload button
 
 
-
-
 https://github.com/user-attachments/assets/dde2330e-e5ff-4832-9f8f-4e7bbd5d7b11
-
-
 
 
 ### Step 4
