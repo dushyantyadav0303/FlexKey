@@ -6,10 +6,14 @@
 
   * [PCB](#PCB)
   * [Case](#Case)
-* [Order Components](#Order Components)
-
-  * [Modification Without changes](#Things that you can customise it Without modifying the Production file)
-  * [Modification with changes](#If you want to modify the files)
+* [Assembly](#Order Components)
+ 
+  * [Soldering](#Soldering)
+  * [Step 1](#Step-1)
+  * [Step 2](#Step-2)
+  * [Step 3](#Step-3)
+  * [Step 4](#Step-4)
+  * [Step 5](#Step-5)
 
 
 
