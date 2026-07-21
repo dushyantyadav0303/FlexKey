@@ -124,3 +124,47 @@ https://github.com/user-attachments/assets/db8a1d57-0f98-42ea-bc92-7f4cc1325804
 
 ## Bill of Materials
 
+Source: `BOM/BOM.csv`
+
+| Item                   | Designator               | Footprint                             | Quantity |
+|------------------------|--------------------------|---------------------------------------|----------|
+| RaspberryPi_Pico       | A1                       | RaspberryPi_Pico                      | 1        |
+| 1N4148                 | D1-D84                   | D_SOD-123                             | 84       |
+| SK6812                 | DL1-DL83                 | SK6812MINI-E                          | 83       |
+| RotaryEncoder          | EN1                      | RotaryEncoder_EC11E-Switch_Vertical   | 1        |
+| oled Disply            | J1                       | OLED_0.91_128x32                      | 1        |
+| Key Switches           | SW1-SW84                 | MX100H                                | 84       |
+| Keycaps                | SW1-SW84                 | MX200H                                | 2        |
+| Kailh Hot-Swap Sockets | SW1-SW84                 | Kailh Hot-Swap Sockets (CPG151101S11) | 84       |
+| Stabilizers            | 8                        |                                       |          |
+| Full Case              | inc. bottom, Top & plate | 1                                     |          |
+| PCB                    | 1                        |                                       |          |
+| M3 heat Insert         | 4                        |                                       |          |
+| M3 Screw H-20mm        | 4                        |                                       |          |
+
+
+## License
+
+Licensed under MIT — you can use this commercially, modify, distribute and  Flex key more 
+with proper attribution. See [LICENSE](LICENSE) file.
+
+## Contributing
+
+Contributions, improvements, and remixes are welcome! Please read the [CONTRIBUTING.md](CONTRIBUTING.md) guide to get started.
+
+
+## Credits
+<div align="center">
+  
+[![Hack Club macondo](https://img.shields.io/badge/Hack%20Club-🦋Macondo-FFC800?style=for-the-badge&logo=hack-club&logoColor=red)](https://macondo.hackclub.com)
+[![EasyEDA](https://img.shields.io/badge/Designed%20in-EasyEDA-00578F?style=for-the-badge&logo=easyeda&logoColor=white)](https://easyeda.com)
+[![Fusion 360](https://img.shields.io/badge/CAD%20in-Fusion%20360-orange?style=for-the-badge&logo=autodesk&logoColor=white)](https://www.autodesk.com/products/fusion-360)
+[![Blender](https://img.shields.io/badge/Rendered%20in-Blender-F5792A?style=for-the-badge&logo=blender&logoColor=white)](https://www.blender.org) 
+</div>
+
+This project was created during a [Hack Club](https://hackclub.com) event [Macondo](https://macondo.hackclub.com).
+- **[Kicad](https://Kicad.org)** - PCB design and schematic capture
+- **[Fusion 360](https://www.autodesk.com/products/fusion-360)** - Cad Designing
+- **[Blender](https://www.blender.org)** - Render
+- **[KMK firmware](https://github.com/KMKfw/kmk_firmware)**
+- **[@NotARoomba](https://github.com/notaroomba) & [@Gabouin](https://github.com/Gabouin)** - Readme template
