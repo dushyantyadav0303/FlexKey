@@ -61,14 +61,14 @@ FlexKey: it is a Fully Customizable OpenSource 75% Mechanical Keyboard with Ai P
 
 ## Repository Structure
 
-- `src/Kicad/` — Kicad PCB sources
-- `src/Fusion 360/` — Fusion 360 CAD sources
-- `src/Blender/` — Blender Render sources
-- `production/PCB/` — PCB fabrication files (Gerbers, BOM, positions)
-- `production/CAD/` — 3D-printable files (.3mf)
-- `GETTING_STARTED/` — Setup guides
-- `Journal/` — DevLogs With Timestamp
-- `Firmware/` — Base Firmare
+- `src/Kicad/` - Kicad PCB sources
+- `src/Fusion 360/` - Fusion 360 CAD sources
+- `src/Blender/` - Blender Render sources
+- `production/PCB/` - PCB fabrication files (Gerbers, BOM, positions)
+- `production/CAD/` - 3D-printable files (.3mf)
+- `GETTING_STARTED/` - Setup guides
+- `Journal/` - DevLogs With Timestamp
+- `Firmware/` - Base Firmare
 
 ## Schematic
 [![kicad](https://img.shields.io/badge/Designed%20in-Kicad-00578F?style=for-the-badge&logo=Kicad&logoColor=white)](https://kicad.org)
@@ -145,7 +145,7 @@ Source: `BOM/BOM.csv`
 
 ## License
 
-Licensed under MIT — you can use this commercially, modify, distribute and  Flex key more 
+Licensed under MIT - you can use this commercially, modify, distribute and  Flex key more 
 with proper attribution. See [LICENSE](LICENSE) file.
 
 ## Contributing
