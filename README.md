@@ -61,17 +61,17 @@ FlexKey: it is a Fully Customizable OpenSource 75% Mechanical Keyboard with Ai P
 
 ## Repository Structure
 
-- `src/Kicad/` — Kicad PCB sources
-- `src/Fusion 360/` — Fusion 360 CAD sources
-- `src/Blender/` — Blender Render sources
-- `production/PCB/` — PCB fabrication files (Gerbers, BOM, positions)
-- `production/CAD/` — 3D-printable files (.3mf)
-- `GETTING_STARTED/` — Setup guides
-- `Journal/` — DevLogs With Timestamp
-- `Firmware/` — Base Firmare
+- `src/Kicad/` - Kicad PCB sources
+- `src/Fusion 360/` - Fusion 360 CAD sources
+- `src/Blender/` - Blender Render sources
+- `production/PCB/` - PCB fabrication files (Gerbers, BOM, positions)
+- `production/CAD/` - 3D-printable files (.3mf)
+- `GETTING_STARTED/` - Setup guides
+- `Journal/` - DevLogs With Timestamp
+- `Firmware/` - Base Firmare
 
 ## Schematic
-[![EasyEDA](https://img.shields.io/badge/Designed%20in-Kicad-00578F?style=for-the-badge&logo=Kicad&logoColor=white)](https://kicad.org)
+[![kicad](https://img.shields.io/badge/Designed%20in-Kicad-00578F?style=for-the-badge&logo=Kicad&logoColor=white)](https://kicad.org)
 
 Source : `src/Cad/.Sch`
 <img width=90%  alt="image" src="https://github.com/user-attachments/assets/3546ff9e-ba97-4856-8fb5-f6c1c54de011" />
@@ -145,7 +145,7 @@ Source: `BOM/BOM.csv`
 
 ## License
 
-Licensed under MIT — you can use this commercially, modify, distribute and  Flex key more 
+Licensed under MIT - you can use this commercially, modify, distribute and  Flex key more 
 with proper attribution. See [LICENSE](LICENSE) file.
 
 ## Contributing
@@ -157,7 +157,7 @@ Contributions, improvements, and remixes are welcome! Please read the [CONTRIBUT
 <div align="center">
   
 [![Hack Club macondo](https://img.shields.io/badge/Hack%20Club-🦋Macondo-FFC800?style=for-the-badge&logo=hack-club&logoColor=red)](https://macondo.hackclub.com)
-[![EasyEDA](https://img.shields.io/badge/Designed%20in-EasyEDA-00578F?style=for-the-badge&logo=easyeda&logoColor=white)](https://easyeda.com)
+[![kicad](https://img.shields.io/badge/Designed%20in-Kicad-00578F?style=for-the-badge&logo=Kicad&logoColor=white)](https://kicad.org)
 [![Fusion 360](https://img.shields.io/badge/CAD%20in-Fusion%20360-orange?style=for-the-badge&logo=autodesk&logoColor=white)](https://www.autodesk.com/products/fusion-360)
 [![Blender](https://img.shields.io/badge/Rendered%20in-Blender-F5792A?style=for-the-badge&logo=blender&logoColor=white)](https://www.blender.org) 
 </div>
