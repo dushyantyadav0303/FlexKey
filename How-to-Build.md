@@ -72,20 +72,35 @@ or
 - Screw in all 4 screw 
 
 ### Step-3 
-#### Upload the Base Firmware in Keyboard 
+### Upload the Base Firmware in Keyboard
 
-- Install Thonny IDE
-- Connect flexkey with your computer
-- Open code given in repo
-- press and hold boot button on rpi2040 untill it goes in boot mode
-- press upload button
+#### Install CircuitPython in Flexkey
+
+- Connect flexkey with your computer. press and hold boot button for 5 second
+- A drive named `RPI-RP2` will appear on your computer.
+- Download the CircuitPython for Raspberry Pi Pico from [circuitpython.org](https://circuitpython.org/board/raspberry_pi_pico/).
+- drag and drop that file in drive `RPI-RP2`.
+- Verify it: Check that the drive name become `CircuitPython` from `RPI-RP2`.
+
+#### Add kmk_firmware library
+- Download the kmk_firmware library from [Repo](https://github.com/KMKfw/kmk_firmware/tree/main/kmk)
+- Drag and Drop kmk folder in drive `CircuitPython/lib`
+
+#### Add firmware
+- open [Firmware directory](https://github.com/dushyantyadav0303/FlexKey/tree/main/Firmware)
+- copy all 3 file (code.py, boot.py, config.py)
+- Paste in root of drive `CircuitPython`
+- And here you go, Your firmware is successfully flashed and you can use the Flexkey
 
 
-https://github.com/user-attachments/assets/dde2330e-e5ff-4832-9f8f-4e7bbd5d7b11
 
 
 ### Step-4
 #### Modify it using Ai
+
+https://github.com/user-attachments/assets/dde2330e-e5ff-4832-9f8f-4e7bbd5d7b11
+
+
 - Go to FlexKey Webapp https://flex-key.vercel.app/home.html
 - open Modification Workspace
 - press and hold boot button untill it goes in boot mode
@@ -95,6 +110,9 @@ https://github.com/user-attachments/assets/dde2330e-e5ff-4832-9f8f-4e7bbd5d7b11
 
 ### Step-5
 #### Test the Keyboard
+
+![image](https://cdn.hackclub.com/019f7eff-3dc1-7aea-98c9-c5d9cd3e788a/20260720-1002-35.4431637.gif)
+
 - you can test the Keyboard in webapp inself 
 - press any key it will show up in dashboard only
 - also the RGB animation you selected , Display text , Muchmore
