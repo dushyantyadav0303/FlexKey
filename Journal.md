@@ -2,6 +2,64 @@
 
 A complete log of the FlexKey development journey on Macondo Platform.
 
+
+## 2026-08-13 | 14:48 | Troubleshooting + Complete build
+**Hours Logged:** 1.5
+ 
+hemlo gng,
+Today I'm Assembling all the things. And complete the build !!!
+It looks so nice After Assembling it <br/>
+![image](https://cdn.hackclub.com/019ffb91-b482-7caa-81c4-6f2fe6f4c3dc/image.png) <br/>
+Then I troubleshoot the firmware in [thonny](https://thonny.org) Where I found some issues of Key misconfiguration and lib related issue Which I fix it and push it to github. <br/>
+![image](https://cdn.hackclub.com/019ffb95-657b-776b-b86e-31e102edfad2/image.png) <br/>
+ 
+---
+ 
+## 2026-08-13 | 06:35 | Keys...!
+**Hours Logged:** 2.3
+ 
+Hello gng, How was your day going? <br/>
+I order all type of Switch available on [cosmicbyte](www.thecosmicbyte.com). <br/>
+& today I Receive all the keyboard Switches. <br/>
+which looks sick fr <br/>
+![image](https://cdn.hackclub.com/019ffb33-fef1-7f96-8d7a-dbb08d9013b1/image.png) <br/>
+Next i 3d printed the Keycaps <br/>
+And I figure out the easiest way to take them out from Bed. <br/>
+just drop the build plate on floor And all the keycaps will take out in once (Please don't try cause It damage your build plate, I did this by mistake.) <br/>
+![image](https://cdn.hackclub.com/019ffb7e-b7d8-771d-914e-b77b3002f4aa/image.png) <br/>
+it having a tight tolerance So I have to heat this up a bit using Hair dryer. <br/>
+![image](https://cdn.hackclub.com/019ffb83-13d2-7d81-8935-41dcc3bd0db3/image.png)
+**caution** : over heat or too much force will deform it's shape. <br/>
+![image](https://cdn.hackclub.com/019ffb85-da45-7b97-8dc3-dccda10e1c0f/image.png) <br/>
+Proof of time: It take a lot of time to Heat a single key and Fit it. <br/>
+  
+---
+ 
+## 2026-08-11 | 20:13 | 3d print Case
+**Hours Logged:** 0.2 
+helo! <br/>
+today, I 3d print Case for Flexkey. <br/>
+~ Source [production/CAD/](https://github.com/dushyantyadav0303/FlexKey/tree/main/production) <br/>
+also to join them properly I use little bit Super Glue. Cause due to Build volume I split 1 object into 2 part. <br/>
+![image](https://cdn.hackclub.com/019ff274-aa19-795b-90b5-4fc9ac861d32/image.png) <br/>
+![image](https://cdn.hackclub.com/019ff274-edfb-79fc-ae1a-86133d16179b/image.png) <br/>
+ 
+---
+ 
+## 2026-08-11 | 20:02 | Important Update !!!
+**Hours Logged:** 0
+ 
+I'm Start building my project! <br/>
+I complete my design on 21 july and ship it for design review. <br/>
+but after 22 day I withdraw my project from design review. Since this is self funded project i already order all the Items. all of them are delivered. <br/>
+Now, I start building the Flexkey in irl. <br/>
+![image](https://cdn.hackclub.com/019ff26a-e409-7abd-b00f-c82ce69fb6e2/image.png)
+ 
+---
+
+
+
+
 ---
 
 
