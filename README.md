@@ -41,14 +41,22 @@ FlexKey: it is a Fully Customizable OpenSource 75% Mechanical Keyboard with Ai P
 <br>
 <p align=center>
   
-  https://github.com/user-attachments/assets/db8a1d57-0f98-42ea-bc92-7f4cc1325804
-  
+ 
+<img width="773" height="309" alt="demo" src="https://github.com/user-attachments/assets/b09428b4-ecb0-4ff0-8268-66145b8e792b" />
+
+
 </p>
+
+> [!IMPORTANT]
+> # PLEASE Check [How-to-Build](https://github.com/dushyantyadav0303/FlexKey/blob/main/How-to-Build.md) 
+> ### It contain Beginner Friendly Step by Step Assembly Instruction Docs.
+
+
 
 
 ### About the Project
 
-**FlexKey:** it is a Fully Customizable OpenSource 75% Mechanical Keyboard with Ai Powered customizable dashboard with allow user to Type a modify the there Keyboard.
+**FlexKey:** It is a Fully Customizable OpenSource 75% Mechanical Keyboard with an Ai Powered customizable dashboard with allow user to Type a modify the there Keyboard.
 
 ### Features
 
@@ -62,10 +70,11 @@ FlexKey: it is a Fully Customizable OpenSource 75% Mechanical Keyboard with Ai P
 ## Repository Structure
 
 - `src/Kicad/` - Kicad PCB sources
-- `src/Fusion 360/` - Fusion 360 CAD sources
-- `src/Blender/` - Blender Render sources
+- `src/CAD/` -  editable .STEP file 
+- `src/CAD/Fusion 360/` - Fusion 360 CAD sources
+- `src/Blender/` - Blender Render sources 
 - `production/PCB/` - PCB fabrication files (Gerbers, BOM, positions)
-- `production/CAD/` - 3D-printable files (.3mf)
+- `production/CAD/` - 3D-printable files (.3mf/.stl)
 - `GETTING_STARTED/` - Setup guides
 - `Journal/` - DevLogs With Timestamp
 - `Firmware/` - Base Firmare
@@ -126,21 +135,22 @@ https://github.com/user-attachments/assets/db8a1d57-0f98-42ea-bc92-7f4cc1325804
 
 Source: `BOM/BOM.csv`
 
-| Item                   | Designator               | Footprint                             | Quantity |
-|------------------------|--------------------------|---------------------------------------|----------|
-| RaspberryPi_Pico       | A1                       | RaspberryPi_Pico                      | 1        |
-| 1N4148                 | D1-D84                   | D_SOD-123                             | 84       |
-| SK6812                 | DL1-DL83                 | SK6812MINI-E                          | 83       |
-| RotaryEncoder          | EN1                      | RotaryEncoder_EC11E-Switch_Vertical   | 1        |
-| oled Disply            | J1                       | OLED_0.91_128x32                      | 1        |
-| Key Switches           | SW1-SW84                 | MX100H                                | 84       |
-| Keycaps                | SW1-SW84                 | MX200H                                | 2        |
-| Kailh Hot-Swap Sockets | SW1-SW84                 | Kailh Hot-Swap Sockets (CPG151101S11) | 84       |
-| Stabilizers            | 8                        |                                       |          |
-| Full Case              | inc. bottom, Top & plate | 1                                     |          |
-| PCB                    | 1                        |                                       |          |
-| M3 heat Insert         | 4                        |                                       |          |
-| M3 Screw H-20mm        | 4                        |                                       |          |
+| Part name | Quantity | Designator | Footprint | Price (In INR) | Link to buy |
+| --- | --- | --- | --- | --- | --- |
+| RaspberryPi_Pico | 1 | A1 | RaspberryPi_Pico | 384 | [Buy](https://robu.in/product/raspberry-pi-pico) |
+| 1N4148 | 84 | D1-D84 | D_SOD-123 | 1.54 | [Buy](https://robu.in/product/1n4148-1w-zener-diode-pack-of-50) |
+| sk6812 mini-e | 83 | DL1-DL83 | SK6812MINI-E | 8.5 | [Buy](https://www.lcsc.com/product-detail/Light-Emitting-Diodes-LED_OPSCO-Optoelectronics-SK6812MINI-E_C5149201.html) |
+| RotaryEncoder | 1 | EN1 | RotaryEncoder_EC11E-Switch_Vertical | 42 | [Buy](https://www.flyrobo.in/ec11-rotary-encoder-half-shaft-handle-potentiometer-15mm) |
+| oled Disply | 1 | J1 | OLED_0.91_128x32 | 212 | [Buy](https://robu.in/product/blue-oled-display-module/) |
+| Key Switches | 84 | SW1-SW84 | MX100H | 7.3 | [Buy](https://www.thecosmicbyte.com/product-category/keyboard-mechanical-switches/) |
+| Keycaps | 2 | SW1-SW84 | MX200H | 999 | [Buy](https://amzn.in/d/0iVP38it) |
+| Kailh Hot-Swap Sockets | 84 | SW1-SW84 | Kailh Hot-Swap Sockets (CPG151101S11) | 11.6 | [Buy](https://www.amazon.in/HEAVENGLOW-Socket-Connector-Keyboard-Switches/dp/B0H74X3QF5) |
+| Stabilizers | 8 |  |  | 32 | [Buy](https://neomacro.in/products/cherry-pcb-mount-stabilizers-clip-in?variant=49725395239190&country=IN&currency=INR&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic) |
+| Full Case | 1 |  | inc. bottom, Top & plate |  | 3D PRINTED |
+| PCB  | 1 |  |  |  | [Buy](https://jlcpcb.com) |
+| M3 heat Insert | 4 |  |  | 3.6 | [Buy](https://robu.in/product/m3-x-6-mm-brass-heat-set-knurl-threaded-round-insert-nut-25-pcs/) |
+| M3 Screw H-20mm | 4 |  |  | 2.6 | [Buy](https://onlyscrews.in/products/m3-x-20mm-hex-allen-socket-head-high-tensile12-9-black-anodized-screw) |
+
 
 
 ## License
