@@ -41,6 +41,11 @@ If you dont have such equipment don't worry go with Some 3d Printing companies l
 - [JLC3DP](https://jlc3dp.com)
 - [Robu3DP](https://robu.in/product/3d-printing-service1/)
 
+> [!TIP]
+> If you are Self 3d Printing with FDM printer. <br/>
+> Wait for bed Plate to be cool down before Taking out prints. <br/>
+> To prevent from warping and print bending issue.
+
 ## Order-Components
 Source `production/BOM/`
 ### After all of this order mention in BOM
