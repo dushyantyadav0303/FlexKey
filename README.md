@@ -147,11 +147,13 @@ Source: `BOM/BOM.csv`
 | Kailh Hot-Swap Sockets | 84 | SW1-SW84 | Kailh Hot-Swap Sockets (CPG151101S11) | 11.6 | [Buy](https://www.amazon.in/HEAVENGLOW-Socket-Connector-Keyboard-Switches/dp/B0H74X3QF5) |
 | Stabilizers | 8 |  |  | 32 | [Buy](https://neomacro.in/products/cherry-pcb-mount-stabilizers-clip-in?variant=49725395239190&country=IN&currency=INR&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic) |
 | Full Case | 1 |  | inc. bottom, Top & plate |  | 3D PRINTED |
-| PCB  | 1 |  |  |  | [Buy](https://jlcpcb.com) |
+| PCB  | 1 |  |  | 2,339 | [Buy](https://jlcpcb.com) |
 | M3 heat Insert | 4 |  |  | 3.6 | [Buy](https://robu.in/product/m3-x-6-mm-brass-heat-set-knurl-threaded-round-insert-nut-25-pcs/) |
 | M3 Screw H-20mm | 4 |  |  | 2.6 | [Buy](https://onlyscrews.in/products/m3-x-20mm-hex-allen-socket-head-high-tensile12-9-black-anodized-screw) |
 
-
+> [!NOTE]
+> Price As of August 15, 2026 
+> & It not Include the Shipping fee <br/>
 
 ## License
 
