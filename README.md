@@ -115,6 +115,9 @@ Source : `src/Kicad/.Pcb`
 </table>
 </div>
 
+> [!TIP]
+> Wait for bed Plate to be cool down before Taking out prints. <br/>
+> To prevent from warping and print bending issue.
 
 ### 3D-printable Production files are available in:
 - source: `production/PCB/`
